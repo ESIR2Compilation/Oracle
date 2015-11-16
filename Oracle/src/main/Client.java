@@ -1,7 +1,6 @@
 package main;
 
-import tests.AbstractTest;
-import tests.BadFormatTest;
+import tests.*;
 
 public class Client {
 	
