@@ -10,6 +10,11 @@ public abstract class AbstractTest {
 		
 	}
 	
+	public String prety(String f){
+		return null;
+	}
+	
+	public abstract boolean estValide(String fileName);
 	public String genererRapport(){
 		return rapport;
 	}
