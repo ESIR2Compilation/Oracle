@@ -1,0 +1,5 @@
+17 nov. 2015 17:22:32 - Pretty Printing
+[OK]     BadFormatTest : le fichier est de bonne extension et a été prety_printé(extension = .while)
+[FAILED] SameCodeTest : Erreur lors de la lecture de oracleBadFormatTest1.whpp
+[FAILED] BeautifulPrintTest : Erreur lors de la lecture de oracleBadFormatTest1.whpp
+[OK]     DoublePrintTest

@@ -1,0 +1,5 @@
+17 nov. 2015 17:22:32 - Pretty Printing
+[FAILED] BadFormatTest : le fichier est de bonne extension et n'a pas  été pretty printé(extension = .while)
+[OK]     SameCodeTest : Le pretty printing réutilise exactement le même nombre de terme employé dans le fichier d'entrée.
+[OK]     BeautifulPrintTest
+[FAILED] DoublePrintTest
