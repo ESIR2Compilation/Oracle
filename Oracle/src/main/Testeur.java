@@ -39,7 +39,7 @@ public class Testeur {
 	// Application des tests
 	public void testerPrettyPrinter(){
 		tests.clear();
-		//TODO
+		//TODO Ajouter chaque classe de tests concernant le prettyprinter.
 	}
 
 	
