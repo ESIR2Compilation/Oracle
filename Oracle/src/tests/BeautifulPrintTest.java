@@ -7,17 +7,19 @@ import java.io.InputStreamReader;
 
 public class BeautifulPrintTest extends AbstractTest{
 
-	public BeautifulPrintTest(String entry) {
-		super(entry);
-		// TODO Auto-generated constructor stub
-	}
-
+	
 	@Override
-	public boolean estValide() {
-		// TODO Auto-generated method stub
-		return false;
+	public void tester() {
+		if (Math.random() > 0.5){
+			rapport = OK + " " + getClass().getSimpleName();
+			estValide = true;
+		}
+		else {
+			rapport = FAIL + " " + getClass().getSimpleName();
+			estValide = false;
+		}
 	}
-
+	
 	public void yolo(){
 		try{
 			InputStream flux=new FileInputStream("test.txt"); 
@@ -28,9 +30,9 @@ public class BeautifulPrintTest extends AbstractTest{
 				System.out.println(ligne);
 			}
 			buff.close(); 
-			}		
-			catch (Exception e){
+		}		
+		catch (Exception e){
 			System.out.println(e.toString());
-			}
+		}
 	}
 }

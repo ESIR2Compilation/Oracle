@@ -5,15 +5,16 @@ import tests.*;
 public class Client {
 	
 	public static void main(String[] args) {
+		AbstractTest test = new BadFormatTest();
 		String file1="badFile.txt";
 		String file2="badFile.while";
 		
-		AbstractTest test = new BadFormatTest(file1);
-		test.estValide();
+		test.setEntry(file1);
+		test.tester();
 		System.out.println(test.genererRapport());
 		
 		test.setEntry(file2);
-		test.estValide();
+		test.tester();
 		System.out.println(test.genererRapport());
 	}
 

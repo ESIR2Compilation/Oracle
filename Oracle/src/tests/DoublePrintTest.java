@@ -2,15 +2,16 @@ package tests;
 
 public class DoublePrintTest extends AbstractTest{
 
-	public DoublePrintTest(String entry) {
-		super(entry);
-		// TODO Auto-generated constructor stub
-	}
-
 	@Override
-	public boolean estValide() {
-		// TODO Auto-generated method stub
-		return false;
+	public void tester() {
+		if (Math.random() > 0.5){
+			rapport = OK + " " + getClass().getSimpleName();
+			estValide = true;
+		}
+		else {
+			rapport = FAIL + " " + getClass().getSimpleName();
+			estValide = false;
+		}
 	}
 
 }
