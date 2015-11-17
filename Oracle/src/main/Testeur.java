@@ -57,6 +57,7 @@ public class Testeur {
 			//On réinitialise le rapport généré auparavant
 			reinitialiserRapport(file, "Pretty Printing");
 
+			System.out.println("========== " + file + " ==========");
 			for(AbstractTest test : tests){
 				test.setEntry(file);
 				//Appliquer les tests concernés

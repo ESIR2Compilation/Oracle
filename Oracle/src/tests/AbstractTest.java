@@ -6,8 +6,8 @@ import java.io.IOException;
 
 public abstract class AbstractTest {
 
-	protected static final String OK   = "[OK]    ";
-	protected static final String FAIL = "[FAILED]";
+	protected static final String OK   = "[OK]    " + " ";
+	protected static final String FAIL = "[FAILED]" + " ";
 	protected String rapport;
 	protected String entry;
 	protected boolean estValide;
@@ -18,7 +18,6 @@ public abstract class AbstractTest {
 	public boolean estValide(){
 		return estValide;
 	}
-
 	/**
 	 * Exécute le test et met à true ou false le résultat qui en découle.
 	 */
@@ -44,5 +43,7 @@ public abstract class AbstractTest {
 
 	public void setEntry(String entry){
 		this.entry = entry;
+		rapport = "";
+		estValide = false;
 	}
 }
