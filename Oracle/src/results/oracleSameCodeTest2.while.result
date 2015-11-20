@@ -1,5 +1,0 @@
-17 nov. 2015 17:22:32 - Pretty Printing
-[OK]     BadFormatTest : le fichier est de bonne extension et a été prety_printé(extension = .while)
-[FAILED] SameCodeTest : Perte ou ajout de terme - autre que la mise en page dans le pretty printing.
-[OK]     BeautifulPrintTest
-[FAILED] DoublePrintTest
