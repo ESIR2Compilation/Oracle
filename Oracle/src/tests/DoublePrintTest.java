@@ -33,7 +33,7 @@ public class DoublePrintTest extends AbstractTest{
 					bis1.close();
 					lect2.close();
 					bis2.close();
-					this.rapport =FAIL +" test de DoublePrint échoué sur l'entrée "+entry;
+					this.rapport =FAIL + getClass().getSimpleName()+" test de DoublePrint échoué sur l'entrée "+entry;
 					estValide=false;
 				}
 				//System.out.println("pas de diff: c1 = " +(char)buf1[0] + " et c2 =" +(char)buf2[0]);
@@ -45,19 +45,19 @@ public class DoublePrintTest extends AbstractTest{
 				bis1.close();
 				lect2.close();
 				bis2.close();
-				this.rapport =FAIL +" test de DoublePrint échoué sur l'entrée "+entry;
+				this.rapport =FAIL + getClass().getSimpleName()+" test de DoublePrint échoué sur l'entrée "+entry;
 				estValide=false;
 			}
 			lect1.close();
 			bis1.close();
 			lect2.close();
 			bis2.close();
-			this.rapport =OK+" test de DoublePrint réussi sur l'entrée "+entry;
+			this.rapport =OK+ getClass().getSimpleName()+" test de DoublePrint réussi sur l'entrée "+entry;
 			estValide=true;
 		}
 		catch(Exception e){
-			e.printStackTrace();
-			this.rapport =FAIL +" test de DoublePrint échoué sur l'entrée "+entry;
+			//e.printStackTrace();
+			this.rapport =FAIL + getClass().getSimpleName()+" test de DoublePrint échoué sur l'entrée "+entry;
 			estValide=false;
 		}
 	}
