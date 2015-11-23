@@ -41,7 +41,7 @@ public class Testeur {
 	public Testeur(int option){
 		this.option = option;
 		tests = new ArrayList<AbstractTest>();
-		files = Arrays.asList(new java.io.File("Oracle/src/entries").list());
+		files = Arrays.asList(new java.io.File("src/entries").list());
 	}
 
 	// Application des tests
@@ -84,7 +84,7 @@ public class Testeur {
 	public void reinitialiserRapport(String entry, String label){
 		FileWriter fw;
 		try {
-			fw = new FileWriter("Oracle/src/results/" + entry + ".result");
+			fw = new FileWriter("src/results/" + entry + ".result");
 			BufferedWriter bw = new BufferedWriter(fw);
 			SimpleDateFormat formatter = new SimpleDateFormat("dd MMM yyyy HH:mm:ss");
 			Date today = new Date(System.currentTimeMillis());

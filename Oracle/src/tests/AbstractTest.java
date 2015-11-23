@@ -29,7 +29,7 @@ public abstract class AbstractTest {
 	public String genererRapport(){
 		FileWriter fw;
 		try {
-			fw = new FileWriter("Oracle/src/results/" + entry + ".result", true);
+			fw = new FileWriter("src/results/" + entry + ".result", true);
 			BufferedWriter bw = new BufferedWriter(fw);
 			bw.write("\n" + rapport);
 			bw.close();
